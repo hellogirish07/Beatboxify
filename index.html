@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatBoxify : A Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>WelCome to Beatboxify!</h1>
+    <input type="file" id="fileInput" multiple>
+    <label for="fileInput">Click here to Select a file</label>
+    <ul id="playlist"><li>No Music Selected ... </li></ul>
+
+    <div class="audio-name" id="audio-name">No Music is Playing Now ...</div>
+    <progress id="progressBar" value="0" max="100"></progress>
+    <div class="controls">
+        <button id="btnPrevious"><i class="fa-solid fa-backward"></i></button>
+        <button id="btnPlay"><i class="fa-brands fa-google-play"></i></button>
+        <!-- <button id="btnPause">Pause</button> -->
+        <button id="btnNext"><i class="fa-solid fa-forward"></i></button>
+    </div>
+    <audio id="audioPlayer" controls></audio>
+    <script src="script.js"></script>
+</body>
+</html>

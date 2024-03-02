@@ -1,0 +1,139 @@
+:root {
+    --primary-color: #0075ff;
+    --hover: #0b3a6f;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #282822;
+    box-sizing: border-box;
+    max-width: 80%;
+    margin: auto;
+}
+
+h1,
+label {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+#playlist {
+    margin: auto;
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    color: #fff;
+    list-style: none;
+    padding: 0;
+}
+
+#playlist li {
+    cursor: pointer;
+    margin: 5px;
+    overflow: hidden;
+}
+
+#playlist li:hover {
+    color: var(--primary-color);
+}
+
+.controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.controls button {
+    margin: 0 5px;
+}
+
+audio {
+    display: none;
+}
+
+input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 1.25em;
+    color: #fff;
+    margin: 15px;
+    padding: 5px;
+    margin-bottom: 15px;
+    display: block;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    transition: all 0.2s ease-in-out;
+    border-radius: 25px;
+}
+
+label:hover {
+    background-color: var(--hover)
+}
+
+.fa-forward,
+.fa-google-play,
+.fa-backward,
+.fa-pause {
+    font-size: 45px;
+}
+
+.fa-pause {
+    padding: 0 8px;
+}
+
+#btnNext,
+#btnPrevious {
+    background-color: #282822;
+    color: white;
+    border: none;
+}
+
+#btnPlay {
+    border-radius: 50%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: #282822;
+}
+
+#btnPlay:hover {
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+#btnNext:hover,
+#btnPrevious:hover {
+    color: var(--primary-color);
+}
+
+#audio-name {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+#progressBar {
+    /* appearance: none; */
+    margin-top: 15px;
+    width: 100%;
+    padding: 5px;
+}
+
+#progressBar::-webkit-progress-value {
+    background-color: #29b364;
+}
+
+
+
+@media (max-width: 600px) {
+    label {
+        font-size: 18px;
+        color: black;
+    }
+}
