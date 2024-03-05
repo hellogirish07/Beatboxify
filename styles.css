@@ -5,7 +5,9 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #282822;
+    /* background-color: #282822; */
+    background: url("/BG-2.jpg") no-repeat;
+    background-size: cover;
     box-sizing: border-box;
     max-width: 80%;
     margin: auto;
@@ -20,7 +22,7 @@ label {
 #playlist {
     margin: auto;
     border: 2px solid var(--primary-color);
-    border-radius: 15px;
+    border-radius: 10px;
     color: #fff;
     list-style: none;
     padding: 0;
@@ -89,7 +91,7 @@ label:hover {
 
 #btnNext,
 #btnPrevious {
-    background-color: #282822;
+    background-color: transparent;
     color: white;
     border: none;
 }
@@ -135,5 +137,11 @@ label:hover {
     label {
         font-size: 18px;
         color: black;
+    }
+
+    body {
+        background-image: url("/BG-1.jpg"); 
+        /* background-position: 100%; */
+        background-attachment: fixed;
     }
 }
