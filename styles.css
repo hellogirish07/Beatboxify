@@ -19,6 +19,23 @@ label {
     color: var(--primary-color);
 }
 
+
+.use {
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    background-color: #282822;
+    opacity: 0.5;
+}
+
+.use h1, .use li {
+    color: #fff;
+    text-align: left;
+    font-size: 15px;
+    text-decoration: dotted;
+}
+
 #playlist {
     margin: auto;
     border: 2px solid var(--primary-color);
